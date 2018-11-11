@@ -1,0 +1,45 @@
+//----------------------------------------------------
+// Module: Icon
+//----------------------------------------------------
+
+//----------------------------------------------------
+// / Icon Setting
+//----------------------------------------------------
+
+#{$icon-class-default} {
+  font-size: inherit;
+  line-height: inherit;
+}
+
+.material-icons {
+  vertical-align: bottom;
+}
+
+//----------------------------------------------------
+// / Combination
+//----------------------------------------------------
+
+#{$icon-class-default} {
+  + .text {
+    margin-left: $icon-margin-left;
+  }
+}
+
+.text {
+  + {
+    & #{$icon-class-default} {
+      margin-left: $icon-margin-left;
+    }
+  }
+}
+
+//----------------------------------------------------
+// / Single Modifier
+//----------------------------------------------------
+
+#{$icon-class-default} {
+  &.is-fit {
+    width: $icon-fit-width;
+    text-align: center;
+  }
+}

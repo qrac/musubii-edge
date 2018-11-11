@@ -1,0 +1,8 @@
+{
+  "setting": {
+    "name": "MUSUBii Edge",
+    "dist": "docs",
+    "src": "src",
+    "banner": true
+  }
+}

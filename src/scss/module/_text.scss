@@ -1,0 +1,80 @@
+//----------------------------------------------------
+// Module: Text
+//----------------------------------------------------
+
+//----------------------------------------------------
+// / Set Setting
+//----------------------------------------------------
+
+.texts {
+  line-height: $texts-line-height;
+}
+
+//----------------------------------------------------
+// / Link
+//----------------------------------------------------
+
+.text.is-link {
+  cursor: pointer;
+  border-bottom: $text-link-border-bottom-width $text-link-border-bottom-style
+    currentColor;
+  &:hover {
+    border-bottom-color: transparent;
+  }
+}
+
+//----------------------------------------------------
+// / Link Reverse
+//----------------------------------------------------
+
+.text.is-link-reverse {
+  cursor: pointer;
+  border-bottom: $text-link-border-bottom-width $text-link-border-bottom-style
+    transparent;
+  &:hover {
+    border-color: currentColor;
+  }
+}
+
+//----------------------------------------------------
+// / Blockquote
+//----------------------------------------------------
+
+.blockquote {
+  background-color: $blockquote-background-color;
+  border-left: $blockquote-border-left-width solid $blockquote-border-left-color;
+  border-radius: $blockquote-border-radius;
+  padding: $blockquote-padding;
+}
+
+//----------------------------------------------------
+// / Code
+//----------------------------------------------------
+
+:not(.pre) {
+  > .code {
+    padding: $code-padding;
+    background-color: $code-background-color;
+    border-radius: $code-border-radius;
+    color: $code-text-color;
+    font-size: $code-font-size;
+    font-family: $code-font-family;
+    word-break: break-all;
+  }
+}
+
+.pre {
+  background-color: $pre-background-color;
+  border-radius: $pre-border-radius;
+  color: $pre-text-color;
+  font-family: $pre-font-family;
+  white-space: $pre-white-space;
+  word-wrap: normal;
+  overflow: hidden;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  > .code {
+    display: block;
+    padding: $pre-code-padding;
+  }
+}

@@ -1,0 +1,172 @@
+//----------------------------------------------------
+// Module: WYSIWYG
+//----------------------------------------------------
+
+//----------------------------------------------------
+// / Heading
+//----------------------------------------------------
+
+.wysiwyg {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-weight: $wysiwyg-heading-font-weight;
+  }
+  h1 {
+    font-size: $wysiwyg-h1-font-size;
+  }
+  h2 {
+    font-size: $wysiwyg-h2-font-size;
+  }
+  h3 {
+    font-size: $wysiwyg-h3-font-size;
+  }
+  h4 {
+    font-size: $wysiwyg-h4-font-size;
+  }
+  h5 {
+    font-size: $wysiwyg-h5-font-size;
+  }
+  h6 {
+    font-size: $wysiwyg-h6-font-size;
+  }
+}
+
+//----------------------------------------------------
+// / Text
+//----------------------------------------------------
+
+.wysiwyg {
+  p {
+    line-height: $texts-line-height;
+  }
+  small {
+    font-size: $wysiwyg-small-font-size;
+  }
+  strong {
+    font-weight: $wysiwyg-strong-font-weight;
+  }
+  em {
+    font-style: italic;
+  }
+  del,
+  s {
+    text-decoration: line-through;
+  }
+}
+
+//----------------------------------------------------
+// / Link
+//----------------------------------------------------
+
+.wysiwyg a {
+  cursor: pointer;
+  color: $primary;
+  border-bottom: $text-link-border-bottom-width $text-link-border-bottom-style
+    currentColor;
+  &:hover,
+  &:active {
+    border-bottom-color: transparent;
+  }
+}
+
+//----------------------------------------------------
+// / Blockquote
+//----------------------------------------------------
+
+.wysiwyg blockquote {
+  background-color: $blockquote-background-color;
+  border-left: $blockquote-border-left-width solid $blockquote-border-left-color;
+  border-radius: $blockquote-border-radius;
+  padding: $blockquote-padding;
+}
+
+//----------------------------------------------------
+// / Code
+//----------------------------------------------------
+
+.wysiwyg :not(pre) {
+  > code {
+    padding: $code-padding;
+    background-color: $code-background-color;
+    border-radius: $code-border-radius;
+    color: $code-text-color;
+    font-size: $code-font-size;
+    font-family: $code-font-family;
+    word-break: break-all;
+  }
+}
+
+.wysiwyg pre {
+  background-color: $pre-background-color;
+  border-radius: $pre-border-radius;
+  color: $pre-text-color;
+  font-family: $pre-font-family;
+  white-space: $pre-white-space;
+  word-wrap: normal;
+  overflow: hidden;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  > code {
+    display: block;
+    padding: $pre-code-padding;
+  }
+}
+
+//----------------------------------------------------
+// / List
+//----------------------------------------------------
+
+.wysiwyg ul,
+.wysiwyg ol {
+  line-height: $texts-line-height;
+  margin-left: $list-margin-left;
+  > li {
+    display: list-item;
+  }
+  > li li {
+    font-size: 100%;
+  }
+}
+
+.wysiwyg ul > li {
+  list-style: circle outside;
+}
+
+.wysiwyg ol > li {
+  list-style: decimal outside;
+}
+
+//----------------------------------------------------
+// / Table
+//----------------------------------------------------
+
+.wysiwyg table {
+  width: 100%;
+  background-color: $table-background-color;
+  th {
+    background-color: $table-paint-background-color;
+    color: $table-paint-text-color;
+    font-weight: $wysiwyg-table-th-font-weight;
+  }
+  th,
+  td {
+    padding: $table-padding;
+    border: $table-border-width solid $table-border-color;
+  }
+}
+
+//----------------------------------------------------
+// / hr
+//----------------------------------------------------
+
+.wysiwyg hr {
+  height: 0;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  border-top: 1px solid $dark-7;
+}

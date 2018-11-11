@@ -1,0 +1,40 @@
+//----------------------------------------------------
+// Layout: Section
+//----------------------------------------------------
+
+//----------------------------------------------------
+// / Inner Control
+//----------------------------------------------------
+
+.section > .inner {
+  max-width: 100%;
+  padding: $section-inner-padding;
+  margin: 0 auto;
+  @include fablet {
+    width: $section-inner-width-fablet;
+  }
+  @include tablet {
+    width: $section-inner-width-tablet;
+  }
+  @include desktop {
+    width: $section-inner-width-desktop;
+  }
+  @include wide {
+    width: $section-inner-width-wide;
+  }
+}
+
+.section > .inner-vw {
+  max-width: 100%;
+  padding: $section-inner-vw-padding;
+  margin: 0 auto;
+  @include fablet {
+    width: $section-inner-vw-width-fablet;
+  }
+}
+
+.section > .inner-soft {
+  max-width: 100%;
+  padding: $section-inner-soft-padding;
+  margin: 0 auto;
+}

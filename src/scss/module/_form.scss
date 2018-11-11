@@ -1,0 +1,311 @@
+//----------------------------------------------------
+// Module: Form
+//----------------------------------------------------
+
+//----------------------------------------------------
+// / Set Setting
+//----------------------------------------------------
+
+.form {
+}
+
+.fieldset {
+  padding: 0;
+  border: none;
+}
+
+//----------------------------------------------------
+// / Set Modifier
+//----------------------------------------------------
+
+.field {
+  display: flex;
+  flex-wrap: wrap;
+  &:not(.is-bar) {
+    margin-left: (-1 * $field-gap-default);
+    margin-bottom: (-1 * $field-gap-default);
+  }
+  &:not(.is-bar) > * {
+    margin-left: $field-gap-default;
+    margin-bottom: $field-gap-default;
+  }
+  > .field {
+    display: inline-flex;
+  }
+  &.is-middle {
+    align-items: center;
+  }
+  &.is-bottom {
+    align-items: flex-end;
+  }
+  &.is-center {
+    justify-content: center;
+  }
+  &.is-right {
+    justify-content: flex-end;
+  }
+  &.is-between {
+    justify-content: space-between;
+  }
+  &.is-around {
+    justify-content: space-around;
+  }
+}
+
+//----------------------------------------------------
+// / Set Bar
+//----------------------------------------------------
+
+.field.is-bar {
+  flex-wrap: nowrap;
+  > .input,
+  > .select > select {
+    border-radius: 0;
+    overflow: hidden;
+  }
+  > .input:not(.is-round):first-child,
+  > .select:not(.is-round):first-child > select {
+    border-top-left-radius: $input-border-radius;
+    border-bottom-left-radius: $input-border-radius;
+  }
+  > .input:not(.is-round):last-child,
+  > .select:not(.is-round):last-child > select {
+    border-top-right-radius: $input-border-radius;
+    border-bottom-right-radius: $input-border-radius;
+  }
+  > .input.is-round:first-child,
+  > .select.is-round:first-child > select {
+    border-top-left-radius: $input-round-border-radius;
+    border-bottom-left-radius: $input-round-border-radius;
+  }
+  > .input.is-round:last-child,
+  > .select.is-round:last-child > select {
+    border-top-right-radius: $input-round-border-radius;
+    border-bottom-right-radius: $input-round-border-radius;
+  }
+  > .input:nth-child(2),
+  > .input:nth-child(2) ~ .input,
+  > .select:nth-child(2) > select,
+  > .select:nth-child(2) ~ .input {
+    border-left: none;
+  }
+}
+
+//----------------------------------------------------
+// / Text Input
+//----------------------------------------------------
+
+.input[type="text"],
+.input[type="search"],
+.input[type="url"],
+.input[type="email"],
+.input[type="tel"],
+.input[type="password"],
+.input[type="datetime-local"],
+.input[type="date"],
+.input[type="month"],
+.input[type="week"],
+.input[type="time"],
+.input[type="number"] {
+  max-width: 100%;
+  height: calc(#{$input-height} + (#{$input-border-width} * 2));
+  padding: $input-padding;
+  background-color: $input-background-color;
+  border: $input-border-width solid $input-border-color;
+  border-radius: $input-border-radius;
+  color: $body-text-color;
+  line-height: $input-line-height;
+  &[disabled] {
+    background-color: $input-disable-background-color;
+    border-color: $input-disable-border-color;
+    color: $input-disable-text-color;
+  }
+  &[readonly] {
+    background-color: $input-readonly-background-color;
+    border-color: $input-readonly-border-color;
+    color: $input-readonly-text-color;
+  }
+  &.is-round {
+    border-radius: $input-round-border-radius;
+  }
+}
+
+.input[type="text"],
+.input[type="search"],
+.input[type="url"],
+.input[type="email"],
+.input[type="tel"],
+.input[type="password"],
+.input[type="number"],
+.textarea {
+  @include placeholder {
+    color: $input-placeholder-color;
+  }
+}
+
+.input[type="text"],
+.input[type="search"],
+.input[type="url"],
+.input[type="email"],
+.input[type="tel"],
+.input[type="password"],
+.input[type="datetime-local"],
+.input[type="date"],
+.input[type="month"],
+.input[type="week"],
+.input[type="time"],
+.input[type="number"],
+.textarea {
+  box-shadow: $input-shadow;
+  &[disabled] {
+    box-shadow: $input-disable-shadow;
+  }
+  &[readonly] {
+    box-shadow: $input-readonly-shadow;
+  }
+}
+
+.input[type="text"],
+.input[type="search"],
+.input[type="url"],
+.input[type="email"],
+.input[type="tel"],
+.input[type="password"],
+.input[type="datetime-local"],
+.input[type="date"],
+.input[type="month"],
+.input[type="week"],
+.input[type="time"],
+.input[type="number"],
+.textarea,
+.select > select {
+  appearance: none;
+}
+
+//----------------------------------------------------
+// / File Input
+//----------------------------------------------------
+
+.input[type="file"] {
+  cursor: pointer;
+  display: block;
+  max-width: 70vw;
+  overflow: hidden;
+  &[disabled] {
+    cursor: default;
+  }
+}
+
+.btn .input[type="file"] {
+  display: none;
+}
+
+//----------------------------------------------------
+// / Text Area
+//----------------------------------------------------
+
+.textarea {
+  background-color: $input-background-color;
+  border: $input-border-width solid $input-border-color;
+  border-radius: $input-border-radius;
+  padding: $textarea-padding;
+  color: $body-text-color;
+  &[disabled] {
+    background-color: $input-disable-background-color;
+    border-color: $input-disable-border-color;
+    color: $input-disable-text-color;
+  }
+  &[readonly] {
+    background-color: $input-readonly-background-color;
+    border-color: $input-readonly-border-color;
+    color: $input-readonly-text-color;
+  }
+}
+
+//----------------------------------------------------
+// / Radio & Check Box
+//----------------------------------------------------
+
+.label.is-radio,
+.label.is-checkbox {
+  > .input[type="radio"],
+  > .input[type="checkbox"] {
+    + .text {
+      margin-left: $radio-gap-default;
+      margin-right: $radio-gap-after;
+    }
+  }
+}
+
+.input[type="radio"],
+.input[type="checkbox"] {
+  + .label.is-radio,
+  + .label.is-checkbox {
+    margin-right: $radio-gap-after;
+  }
+}
+
+.input[type="radio"],
+.input[type="checkbox"] {
+  &[disabled] + .text,
+  &[disabled] + .label.is-radio,
+  &[disabled] + .label.is-checkbox {
+    color: $dark-5;
+  }
+}
+
+//----------------------------------------------------
+// / Select Input
+//----------------------------------------------------
+
+.select {
+  position: relative;
+  display: inline-flex;
+  > select {
+    flex: 1 0 0%;
+    max-width: 100%;
+    height: calc(#{$input-height} + (#{$input-border-width} * 2));
+    padding: $input-padding;
+    background-color: $input-background-color;
+    border: $input-border-width solid $input-border-color;
+    border-radius: $input-border-radius;
+    color: $body-text-color;
+    line-height: $input-line-height;
+    &[disabled] {
+      background-color: $input-disable-background-color;
+      color: $input-disable-text-color;
+    }
+    &[readonly] {
+      background-color: $input-readonly-background-color;
+      color: $input-readonly-text-color;
+    }
+  }
+  &.is-round:not(.is-multiple) > select {
+    border-radius: $input-round-border-radius;
+  }
+  &:not(.is-multiple) {
+    &:after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      right: ($select-angle-size * 2);
+      width: $select-angle-size;
+      height: $select-angle-size;
+      border-bottom: $select-angle-border-width solid $select-angle-border-color;
+      border-right: $select-angle-border-width solid $select-angle-border-color;
+      transform: translateY(-70%) rotate(45deg);
+    }
+    > select {
+      padding-right: ($select-angle-size * 5);
+    }
+  }
+}
+
+.select.is-multiple > select {
+  height: auto;
+  padding: 0;
+  > option {
+    min-height: 1.5em;
+    padding: 0.5em 0.75em;
+  }
+}

@@ -1,0 +1,145 @@
+//----------------------------------------------------
+// Utility: Deco
+//----------------------------------------------------
+
+//----------------------------------------------------
+// / Dark Text
+//----------------------------------------------------
+
+@each $key, $value in $pattern-color-dark {
+  .is-#{$key} {
+    color: $value;
+  }
+}
+
+//----------------------------------------------------
+// / Light Text
+//----------------------------------------------------
+
+@each $key, $value in $pattern-color-light {
+  .is-#{$key} {
+    color: $value;
+  }
+}
+
+//----------------------------------------------------
+// / Theme Color Text
+//----------------------------------------------------
+
+@each $key, $value in $pattern-color-theme {
+  .is-#{$key}:not(.btn) {
+    color: $value;
+  }
+}
+
+//----------------------------------------------------
+// / Text Weight
+//----------------------------------------------------
+
+@each $key, $value in $pattern-font-weight {
+  .is-#{$key} {
+    font-weight: $value;
+  }
+}
+
+//----------------------------------------------------
+// / Text Style
+//----------------------------------------------------
+
+.is-italic {
+  font-style: italic;
+}
+
+.is-delete {
+  text-decoration: line-through;
+}
+
+.is-capitalize {
+  text-transform: capitalize;
+}
+
+.is-lowercase {
+  text-transform: lowercase;
+}
+
+.is-uppercase {
+  text-transform: uppercase;
+}
+
+//----------------------------------------------------
+// / Text Align
+//----------------------------------------------------
+
+:not(.grid):not(.btns):not(.field) {
+  @each $key-breakpoint, $mediaquery in $pattern-breakpoint-mediaquery-all {
+    @include mediaquery-pattern($mediaquery) {
+      @if $key-breakpoint == "mobile" {
+        &.is-left,
+        &.is-#{$key-breakpoint}-left {
+          text-align: left;
+        }
+        &.is-center,
+        &.is-#{$key-breakpoint}-center {
+          text-align: center;
+        }
+        &.is-right,
+        &.is-#{$key-breakpoint}-right {
+          text-align: right;
+        }
+      } @else {
+        &.is-#{$key-breakpoint}-left {
+          text-align: left;
+        }
+        &.is-#{$key-breakpoint}-center {
+          text-align: center;
+        }
+        &.is-#{$key-breakpoint}-right {
+          text-align: right;
+        }
+      }
+    }
+  }
+  &.is-justify {
+    text-align: justify;
+  }
+  &.is-baseline {
+    vertical-align: baseline;
+  }
+  &.is-top {
+    vertical-align: top;
+  }
+  &.is-middle {
+    vertical-align: middle;
+  }
+  &.is-bottom {
+    vertical-align: bottom;
+  }
+}
+
+//----------------------------------------------------
+// / Text Control
+//----------------------------------------------------
+
+.is-nowrap {
+  white-space: nowrap;
+}
+
+.is-break {
+  word-break: break-all;
+}
+
+.is-centering {
+  margin: 0 auto;
+}
+
+.is-scroll-x {
+  overflow: hidden;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.is-ellipsis {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

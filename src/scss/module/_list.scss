@@ -1,0 +1,46 @@
+//----------------------------------------------------
+// Module: List
+//----------------------------------------------------
+
+//----------------------------------------------------
+// / Set Modifier
+//----------------------------------------------------
+
+.list {
+  > .item:not(:first-child) {
+    margin-top: $list-item-margin-top;
+  }
+  > .item > .list {
+    margin-top: ($list-item-margin-top * 2);
+  }
+  &.is-disc,
+  &.is-circle,
+  &.is-decimal {
+    margin-left: $list-margin-left;
+    > .item {
+      display: list-item;
+    }
+  }
+  &.is-disc > .item {
+    list-style: disc outside;
+  }
+  &.is-circle > .item {
+    list-style: circle outside;
+  }
+  &.is-decimal > .item {
+    list-style: decimal outside;
+  }
+}
+
+//----------------------------------------------------
+// / Flex Note
+//----------------------------------------------------
+
+.list.is-note {
+  > .item {
+    display: flex;
+  }
+  > .item > *:not(:first-child) {
+    margin-left: $list-note-item-margin-left;
+  }
+}
