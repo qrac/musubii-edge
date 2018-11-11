@@ -1,0 +1,16 @@
+//----------------------------------------------------
+// / Export Button / Melt - Info
+//----------------------------------------------------
+
+.btn.is-melt {
+  &.is-info {
+    background-color: transparent;
+    border-width: $btn-border-width;
+    border-style: solid;
+    border-color: transparent;
+    color: $info;
+    &:hover {
+      background-color: $btn-melt-default-hover-background-color;
+    }
+  }
+}

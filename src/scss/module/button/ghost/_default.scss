@@ -1,0 +1,15 @@
+//----------------------------------------------------
+// / Export Button / Ghost - Default
+//----------------------------------------------------
+
+.btn.is-ghost {
+  background-color: transparent;
+  border-width: $btn-border-width;
+  border-style: solid;
+  border-color: $btn-ghost-default-border-color;
+  color: $btn-ghost-default-text-color;
+  &:hover {
+    background-color: $btn-ghost-default-hover-background-color;
+    color: $btn-ghost-default-hover-text-color;
+  }
+}

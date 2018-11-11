@@ -1,0 +1,9 @@
+//----------------------------------------------------
+// / Export Button / Common - Round
+//----------------------------------------------------
+
+.btn {
+  &.is-round {
+    border-radius: $btn-round-border-radius;
+  }
+}

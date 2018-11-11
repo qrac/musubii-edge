@@ -1,0 +1,22 @@
+//----------------------------------------------------
+// / Export Button / Common - Default
+//----------------------------------------------------
+
+.btn {
+  cursor: pointer;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  align-self: flex-start;
+  white-space: nowrap;
+  padding: $btn-padding;
+  border-radius: $btn-border-radius;
+  line-height: $btn-line-height;
+  text-align: center;
+  transition: $btn-transition;
+  &[type="button"],
+  &[type="reset"],
+  &[type="submit"] {
+    color: $body-text-color;
+  }
+}

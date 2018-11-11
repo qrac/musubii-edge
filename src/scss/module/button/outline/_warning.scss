@@ -1,0 +1,18 @@
+//----------------------------------------------------
+// / Export Button / Outline - Warning
+//----------------------------------------------------
+
+.btn.is-outline {
+  &.is-warning {
+    background-color: $btn-outline-default-background-color;
+    border-width: $btn-border-width;
+    border-style: solid;
+    border-color: $warning;
+    color: $warning;
+    &:hover {
+      background-color: $warning;
+      border-color: transparent;
+      color: $light;
+    }
+  }
+}

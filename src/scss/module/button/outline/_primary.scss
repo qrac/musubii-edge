@@ -1,0 +1,18 @@
+//----------------------------------------------------
+// / Export Button / Outline - Primary
+//----------------------------------------------------
+
+.btn.is-outline {
+  &.is-primary {
+    background-color: $btn-outline-default-background-color;
+    border-width: $btn-border-width;
+    border-style: solid;
+    border-color: $primary;
+    color: $primary;
+    &:hover {
+      background-color: $primary;
+      border-color: transparent;
+      color: $light;
+    }
+  }
+}

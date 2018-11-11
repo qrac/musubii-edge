@@ -1,0 +1,13 @@
+//----------------------------------------------------
+// / Export Button / Plain - Default
+//----------------------------------------------------
+
+.btn.is-plain {
+  background-color: $btn-plain-default-background-color;
+  border-width: $btn-border-width;
+  border-style: solid;
+  border-color: transparent;
+  &:hover {
+    background-color: $btn-plain-default-hover-background-color;
+  }
+}

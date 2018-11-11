@@ -1,0 +1,18 @@
+//----------------------------------------------------
+// / Export Button / Ghost - Success
+//----------------------------------------------------
+
+.btn.is-ghost {
+  &.is-success {
+    background-color: transparent;
+    border-width: $btn-border-width;
+    border-style: solid;
+    border-color: lighten($success, 30%);
+    color: lighten($success, 30%);
+    &:hover {
+      background-color: $success;
+      border-color: transparent;
+      color: $light;
+    }
+  }
+}

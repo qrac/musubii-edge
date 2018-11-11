@@ -1,0 +1,18 @@
+//----------------------------------------------------
+// / Export Button / Outline - Danger
+//----------------------------------------------------
+
+.btn.is-outline {
+  &.is-danger {
+    background-color: $btn-outline-default-background-color;
+    border-width: $btn-border-width;
+    border-style: solid;
+    border-color: $danger;
+    color: $danger;
+    &:hover {
+      background-color: $danger;
+      border-color: transparent;
+      color: $light;
+    }
+  }
+}

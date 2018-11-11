@@ -1,0 +1,18 @@
+//----------------------------------------------------
+// / Export Button / Ghost - Primary
+//----------------------------------------------------
+
+.btn.is-ghost {
+  &.is-primary {
+    background-color: transparent;
+    border-width: $btn-border-width;
+    border-style: solid;
+    border-color: lighten($primary, 30%);
+    color: lighten($primary, 30%);
+    &:hover {
+      background-color: $primary;
+      border-color: transparent;
+      color: $light;
+    }
+  }
+}

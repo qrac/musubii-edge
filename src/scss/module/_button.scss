@@ -75,165 +75,54 @@
 }
 
 //----------------------------------------------------
-// / Single Modifier
+// / Import Common
 //----------------------------------------------------
 
-.btn {
-  cursor: pointer;
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  align-self: flex-start;
-  white-space: nowrap;
-  padding: $btn-padding;
-  border-radius: $btn-border-radius;
-  line-height: $btn-line-height;
-  text-align: center;
-  transition: $btn-transition;
-  &[type="button"],
-  &[type="reset"],
-  &[type="submit"] {
-    color: $body-text-color;
-  }
-  &.is-disable,
-  &[disabled] {
-    cursor: default;
-  }
-  &.is-round {
-    border-radius: $btn-round-border-radius;
-  }
-  &.is-circle {
-    position: relative;
-    width: $btn-circle-width;
-    height: $btn-circle-height;
-    padding: 0;
-    border-radius: $btn-circle-border-radius;
-    line-height: 1;
-  }
-}
-
-//----------------------------------------------------
-// / Floating
-//----------------------------------------------------
-
-.btn.is-floating:not(.is-disable) {
-  box-shadow: $btn-floating-shadow;
-  &:hover {
-    box-shadow: $btn-floating-hover-shadow;
-  }
-}
+@import "button/common/_default.scss";
+@import "button/common/_round.scss";
+@import "button/common/_circle.scss";
+@import "button/common/_floating.scss";
 
 //----------------------------------------------------
 // / Plain
 //----------------------------------------------------
 
-.btn.is-plain {
-  background-color: $btn-plain-default-background-color;
-  border: $btn-border-width solid transparent;
-  &:hover {
-    background-color: $btn-plain-default-hover-background-color;
-  }
-  @each $key, $value in $pattern-color-theme {
-    &.is-#{$key} {
-      background-color: $value;
-      color: $light;
-      &:hover {
-        background-color: darken($value, 5%);
-      }
-    }
-  }
-  &.is-disable,
-  &.is-disable:hover,
-  &[disabled],
-  &[disabled]:hover {
-    background-color: $btn-disable-background-color;
-    color: $btn-disable-text-color;
-  }
-}
+@import "button/plain/_default.scss";
+@import "button/plain/_primary.scss";
+@import "button/plain/_info.scss";
+@import "button/plain/_success.scss";
+@import "button/plain/_warning.scss";
+@import "button/plain/_danger.scss";
 
 //----------------------------------------------------
 // / Melt
 //----------------------------------------------------
 
-.btn.is-melt {
-  background-color: transparent;
-  border: $btn-border-width solid transparent;
-  &:hover {
-    background-color: $btn-melt-default-hover-background-color;
-  }
-  @each $key, $value in $pattern-color-theme {
-    &.is-#{$key} {
-      color: $value;
-    }
-  }
-  &.is-disable,
-  &.is-disable:hover,
-  &[disabled],
-  &[disabled]:hover {
-    color: $btn-disable-text-color;
-    background-color: transparent;
-  }
-}
+@import "button/melt/_default.scss";
+@import "button/melt/_primary.scss";
+@import "button/melt/_info.scss";
+@import "button/melt/_success.scss";
+@import "button/melt/_warning.scss";
+@import "button/melt/_danger.scss";
 
 //----------------------------------------------------
 // / Outline
 //----------------------------------------------------
 
-.btn.is-outline {
-  background-color: $btn-outline-default-background-color;
-  border: $btn-border-width solid $btn-outline-default-border-color;
-  &:hover {
-    background-color: $btn-outline-default-hover-background-color;
-  }
-  @each $key, $value in $pattern-color-theme {
-    &.is-#{$key} {
-      border-color: $value;
-      color: $value;
-      &:hover {
-        background-color: $value;
-        border-color: transparent;
-        color: $light;
-      }
-    }
-  }
-  &.is-disable,
-  &.is-disable:hover,
-  &[disabled],
-  &[disabled]:hover {
-    background-color: $btn-disable-background-color-alpha;
-    color: $btn-disable-text-color;
-  }
-}
+@import "button/outline/_default.scss";
+@import "button/outline/_primary.scss";
+@import "button/outline/_info.scss";
+@import "button/outline/_success.scss";
+@import "button/outline/_warning.scss";
+@import "button/outline/_danger.scss";
 
 //----------------------------------------------------
 // / Ghost
 //----------------------------------------------------
 
-.btn.is-ghost {
-  background-color: transparent;
-  border: $btn-border-width solid $btn-ghost-default-border-color;
-  color: $btn-ghost-default-text-color;
-  &:hover {
-    background-color: $btn-ghost-default-hover-background-color;
-    color: $btn-ghost-default-hover-text-color;
-  }
-  @each $key, $value in $pattern-color-theme {
-    &.is-#{$key} {
-      border-color: lighten($value, 30%);
-      color: lighten($value, 30%);
-      &:hover {
-        background-color: $value;
-        border-color: transparent;
-        color: $light;
-      }
-    }
-  }
-  &.is-disable,
-  &.is-disable:hover,
-  &[disabled],
-  &[disabled]:hover {
-    background-color: $btn-ghost-disable-background-color;
-    border-color: $btn-ghost-disable-border-color;
-    color: $btn-ghost-disable-text-color;
-  }
-}
+@import "button/ghost/_default.scss";
+@import "button/ghost/_primary.scss";
+@import "button/ghost/_info.scss";
+@import "button/ghost/_success.scss";
+@import "button/ghost/_warning.scss";
+@import "button/ghost/_danger.scss";

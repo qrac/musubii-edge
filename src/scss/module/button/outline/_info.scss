@@ -1,0 +1,18 @@
+//----------------------------------------------------
+// / Export Button / Outline - Info
+//----------------------------------------------------
+
+.btn.is-outline {
+  &.is-info {
+    background-color: $btn-outline-default-background-color;
+    border-width: $btn-border-width;
+    border-style: solid;
+    border-color: $info;
+    color: $info;
+    &:hover {
+      background-color: $info;
+      border-color: transparent;
+      color: $light;
+    }
+  }
+}

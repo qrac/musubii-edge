@@ -1,0 +1,20 @@
+//----------------------------------------------------
+// / Export Button / Ghost - Disable
+//----------------------------------------------------
+
+.btn.is-ghost {
+  &.is-disable,
+  &[disabled] {
+    cursor: default;
+  }
+  &.is-disable,
+  &.is-disable:hover,
+  &[disabled],
+  &[disabled]:hover {
+    background-color: $btn-ghost-disable-background-color;
+    border-width: $btn-border-width;
+    border-style: solid;
+    border-color: $btn-ghost-disable-border-color;
+    color: $btn-ghost-disable-text-color;
+  }
+}

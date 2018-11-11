@@ -1,0 +1,16 @@
+//----------------------------------------------------
+// / Export Button / Melt - Danger
+//----------------------------------------------------
+
+.btn.is-melt {
+  &.is-danger {
+    background-color: transparent;
+    border-width: $btn-border-width;
+    border-style: solid;
+    border-color: transparent;
+    color: $danger;
+    &:hover {
+      background-color: $btn-melt-default-hover-background-color;
+    }
+  }
+}

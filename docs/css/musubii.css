@@ -1,4 +1,4 @@
-/*! MUSUBii v6.6.0 MIT by Qrac */
+/*! MUSUBii Edge v0.0.1 MIT by Qrac */
 
 *,
 ::before,
@@ -546,11 +546,6 @@ iframe {
   color: rgba(0, 0, 0, 0.7);
 }
 
-.btn.is-disable,
-.btn[disabled] {
-  cursor: default;
-}
-
 .btn.is-round {
   border-radius: 999em;
 }
@@ -574,7 +569,9 @@ iframe {
 
 .btn.is-plain {
   background-color: whitesmoke;
-  border: 1px solid transparent;
+  border-width: 1px;
+  border-style: solid;
+  border-color: transparent;
 }
 
 .btn.is-plain:hover {
@@ -583,6 +580,9 @@ iframe {
 
 .btn.is-plain.is-primary {
   background-color: #1cb4c7;
+  border-width: 1px;
+  border-style: solid;
+  border-color: transparent;
   color: #ffffff;
 }
 
@@ -592,6 +592,9 @@ iframe {
 
 .btn.is-plain.is-info {
   background-color: #4b9ad8;
+  border-width: 1px;
+  border-style: solid;
+  border-color: transparent;
   color: #ffffff;
 }
 
@@ -601,6 +604,9 @@ iframe {
 
 .btn.is-plain.is-success {
   background-color: #1bbc5e;
+  border-width: 1px;
+  border-style: solid;
+  border-color: transparent;
   color: #ffffff;
 }
 
@@ -610,6 +616,9 @@ iframe {
 
 .btn.is-plain.is-warning {
   background-color: #e79024;
+  border-width: 1px;
+  border-style: solid;
+  border-color: transparent;
   color: #ffffff;
 }
 
@@ -619,6 +628,9 @@ iframe {
 
 .btn.is-plain.is-danger {
   background-color: #e65d53;
+  border-width: 1px;
+  border-style: solid;
+  border-color: transparent;
   color: #ffffff;
 }
 
@@ -626,17 +638,11 @@ iframe {
   background-color: #e3483d;
 }
 
-.btn.is-plain.is-disable,
-.btn.is-plain.is-disable:hover,
-.btn.is-plain[disabled],
-.btn.is-plain[disabled]:hover {
-  background-color: #bdbdbd;
-  color: rgba(0, 0, 0, 0.26);
-}
-
 .btn.is-melt {
   background-color: transparent;
-  border: 1px solid transparent;
+  border-width: 1px;
+  border-style: solid;
+  border-color: transparent;
 }
 
 .btn.is-melt:hover {
@@ -644,36 +650,70 @@ iframe {
 }
 
 .btn.is-melt.is-primary {
+  background-color: transparent;
+  border-width: 1px;
+  border-style: solid;
+  border-color: transparent;
   color: #1cb4c7;
 }
 
+.btn.is-melt.is-primary:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
 .btn.is-melt.is-info {
+  background-color: transparent;
+  border-width: 1px;
+  border-style: solid;
+  border-color: transparent;
   color: #4b9ad8;
 }
 
+.btn.is-melt.is-info:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
 .btn.is-melt.is-success {
+  background-color: transparent;
+  border-width: 1px;
+  border-style: solid;
+  border-color: transparent;
   color: #1bbc5e;
 }
 
+.btn.is-melt.is-success:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
 .btn.is-melt.is-warning {
+  background-color: transparent;
+  border-width: 1px;
+  border-style: solid;
+  border-color: transparent;
   color: #e79024;
 }
 
+.btn.is-melt.is-warning:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
 .btn.is-melt.is-danger {
+  background-color: transparent;
+  border-width: 1px;
+  border-style: solid;
+  border-color: transparent;
   color: #e65d53;
 }
 
-.btn.is-melt.is-disable,
-.btn.is-melt.is-disable:hover,
-.btn.is-melt[disabled],
-.btn.is-melt[disabled]:hover {
-  color: rgba(0, 0, 0, 0.26);
-  background-color: transparent;
+.btn.is-melt.is-danger:hover {
+  background-color: rgba(0, 0, 0, 0.05);
 }
 
 .btn.is-outline {
   background-color: #ffffff;
-  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgba(0, 0, 0, 0.15);
 }
 
 .btn.is-outline:hover {
@@ -681,6 +721,9 @@ iframe {
 }
 
 .btn.is-outline.is-primary {
+  background-color: #ffffff;
+  border-width: 1px;
+  border-style: solid;
   border-color: #1cb4c7;
   color: #1cb4c7;
 }
@@ -692,6 +735,9 @@ iframe {
 }
 
 .btn.is-outline.is-info {
+  background-color: #ffffff;
+  border-width: 1px;
+  border-style: solid;
   border-color: #4b9ad8;
   color: #4b9ad8;
 }
@@ -703,6 +749,9 @@ iframe {
 }
 
 .btn.is-outline.is-success {
+  background-color: #ffffff;
+  border-width: 1px;
+  border-style: solid;
   border-color: #1bbc5e;
   color: #1bbc5e;
 }
@@ -714,6 +763,9 @@ iframe {
 }
 
 .btn.is-outline.is-warning {
+  background-color: #ffffff;
+  border-width: 1px;
+  border-style: solid;
   border-color: #e79024;
   color: #e79024;
 }
@@ -725,6 +777,9 @@ iframe {
 }
 
 .btn.is-outline.is-danger {
+  background-color: #ffffff;
+  border-width: 1px;
+  border-style: solid;
   border-color: #e65d53;
   color: #e65d53;
 }
@@ -735,17 +790,11 @@ iframe {
   color: #ffffff;
 }
 
-.btn.is-outline.is-disable,
-.btn.is-outline.is-disable:hover,
-.btn.is-outline[disabled],
-.btn.is-outline[disabled]:hover {
-  background-color: rgba(0, 0, 0, 0.26);
-  color: rgba(0, 0, 0, 0.26);
-}
-
 .btn.is-ghost {
   background-color: transparent;
-  border: 1px solid #ffffff;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #ffffff;
   color: #ffffff;
 }
 
@@ -755,6 +804,9 @@ iframe {
 }
 
 .btn.is-ghost.is-primary {
+  background-color: transparent;
+  border-width: 1px;
+  border-style: solid;
   border-color: #8ee4ef;
   color: #8ee4ef;
 }
@@ -766,6 +818,9 @@ iframe {
 }
 
 .btn.is-ghost.is-info {
+  background-color: transparent;
+  border-width: 1px;
+  border-style: solid;
   border-color: #c9e1f3;
   color: #c9e1f3;
 }
@@ -777,6 +832,9 @@ iframe {
 }
 
 .btn.is-ghost.is-success {
+  background-color: transparent;
+  border-width: 1px;
+  border-style: solid;
   border-color: #83edaf;
   color: #83edaf;
 }
@@ -788,6 +846,9 @@ iframe {
 }
 
 .btn.is-ghost.is-warning {
+  background-color: transparent;
+  border-width: 1px;
+  border-style: solid;
   border-color: #f6d6ad;
   color: #f6d6ad;
 }
@@ -799,6 +860,9 @@ iframe {
 }
 
 .btn.is-ghost.is-danger {
+  background-color: transparent;
+  border-width: 1px;
+  border-style: solid;
   border-color: #f9dbd9;
   color: #f9dbd9;
 }
@@ -807,15 +871,6 @@ iframe {
   background-color: #e65d53;
   border-color: transparent;
   color: #ffffff;
-}
-
-.btn.is-ghost.is-disable,
-.btn.is-ghost.is-disable:hover,
-.btn.is-ghost[disabled],
-.btn.is-ghost[disabled]:hover {
-  background-color: rgba(255, 255, 255, 0.12);
-  border-color: rgba(255, 255, 255, 0.5);
-  color: rgba(255, 255, 255, 0.5);
 }
 
 .list > .item:not(:first-child) {

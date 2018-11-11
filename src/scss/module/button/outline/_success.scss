@@ -1,0 +1,18 @@
+//----------------------------------------------------
+// / Export Button / Outline - Success
+//----------------------------------------------------
+
+.btn.is-outline {
+  &.is-success {
+    background-color: $btn-outline-default-background-color;
+    border-width: $btn-border-width;
+    border-style: solid;
+    border-color: $success;
+    color: $success;
+    &:hover {
+      background-color: $success;
+      border-color: transparent;
+      color: $light;
+    }
+  }
+}

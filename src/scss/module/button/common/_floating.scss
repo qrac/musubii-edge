@@ -1,0 +1,10 @@
+//----------------------------------------------------
+// / Export Button / Common - Floating
+//----------------------------------------------------
+
+.btn.is-floating:not(.is-disable) {
+  box-shadow: $btn-floating-shadow;
+  &:hover {
+    box-shadow: $btn-floating-hover-shadow;
+  }
+}

@@ -1,0 +1,18 @@
+//----------------------------------------------------
+// / Export Button / Ghost - Danger
+//----------------------------------------------------
+
+.btn.is-ghost {
+  &.is-danger {
+    background-color: transparent;
+    border-width: $btn-border-width;
+    border-style: solid;
+    border-color: lighten($danger, 30%);
+    color: lighten($danger, 30%);
+    &:hover {
+      background-color: $danger;
+      border-color: transparent;
+      color: $light;
+    }
+  }
+}

@@ -1,0 +1,18 @@
+//----------------------------------------------------
+// / Export Button / Ghost - Warning
+//----------------------------------------------------
+
+.btn.is-ghost {
+  &.is-warning {
+    background-color: transparent;
+    border-width: $btn-border-width;
+    border-style: solid;
+    border-color: lighten($warning, 30%);
+    color: lighten($warning, 30%);
+    &:hover {
+      background-color: $warning;
+      border-color: transparent;
+      color: $light;
+    }
+  }
+}

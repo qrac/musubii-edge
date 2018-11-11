@@ -1,0 +1,16 @@
+//----------------------------------------------------
+// / Export Button / Plain - Danger
+//----------------------------------------------------
+
+.btn.is-plain {
+  &.is-danger {
+    background-color: $danger;
+    border-width: $btn-border-width;
+    border-style: solid;
+    border-color: transparent;
+    color: $light;
+    &:hover {
+      background-color: darken($danger, 5%);
+    }
+  }
+}

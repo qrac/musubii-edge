@@ -1,0 +1,18 @@
+//----------------------------------------------------
+// / Export Button / Ghost - Info
+//----------------------------------------------------
+
+.btn.is-ghost {
+  &.is-info {
+    background-color: transparent;
+    border-width: $btn-border-width;
+    border-style: solid;
+    border-color: lighten($info, 30%);
+    color: lighten($info, 30%);
+    &:hover {
+      background-color: $info;
+      border-color: transparent;
+      color: $light;
+    }
+  }
+}

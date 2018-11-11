@@ -1,0 +1,16 @@
+//----------------------------------------------------
+// / Export Button / Plain - Success
+//----------------------------------------------------
+
+.btn.is-plain {
+  &.is-success {
+    background-color: $success;
+    border-width: $btn-border-width;
+    border-style: solid;
+    border-color: transparent;
+    color: $light;
+    &:hover {
+      background-color: darken($success, 5%);
+    }
+  }
+}

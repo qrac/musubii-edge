@@ -1,0 +1,20 @@
+//----------------------------------------------------
+// / Export Button / Plain - Disable
+//----------------------------------------------------
+
+.btn.is-plain {
+  &.is-disable,
+  &[disabled] {
+    cursor: default;
+  }
+  &.is-disable,
+  &.is-disable:hover,
+  &[disabled],
+  &[disabled]:hover {
+    background-color: $btn-disable-background-color;
+    border-width: $btn-border-width;
+    border-style: solid;
+    border-color: transparent;
+    color: $btn-disable-text-color;
+  }
+}

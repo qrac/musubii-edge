@@ -1,0 +1,14 @@
+//----------------------------------------------------
+// / Export Button / Common - Circle
+//----------------------------------------------------
+
+.btn {
+  &.is-circle {
+    position: relative;
+    width: $btn-circle-width;
+    height: $btn-circle-height;
+    padding: 0;
+    border-radius: $btn-circle-border-radius;
+    line-height: 1;
+  }
+}
